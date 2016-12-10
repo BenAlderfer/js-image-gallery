@@ -3,6 +3,8 @@ Simple JS only image gallery with key navigation.
 
 It has built in navigation using the left and right arrow keys and 'a' and 'd'.
 
+Demo: https://benalderfer.github.io/js-image-gallery/
+
 To get started:
 
 1) Copy 'js/imageGallery.js' to your project
