@@ -22,3 +22,5 @@ To get started:
     setup(["images/img1.jpg", "images/img2.jpg", "images/img3.jpg"]);
 </script>
 ```
+
+***** All other include files are just for the demo and are not required
