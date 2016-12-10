@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gallery</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <!-- Android Chrome Header Color -->
+    <meta name="theme-color" content="#2196F3">
+
+    <!-- Windows 8/10 resources -->
+    <!-- <meta name="msapplication-TileImage" content="media/favicon.png">-->
+    <meta name="msapplication-TileColor" content="#2196F3">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.png" />
+
+    <!-- style sheets -->
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/framework.css" media="screen">
+
+</head>
+<body class="background-color">
+
+<div class="row">
+    <div class="col-s-12 col-m-2" id="btn-left-parent">
+        <button class="floating_button" id="btn-left" onclick="prev()">
+            <!-- left arrow -->
+            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="#212121" d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" />
+            </svg>
+        </button>
+    </div>
+    <div class="col-s-12 col-m-8">
+        <div class="card" id="image-parent">
+            <img src="images/img1.jpg" alt="gallery image" class="gallery_image" id="image">
+        </div>
+    </div>
+    <div class="col-s-12 col-m-2" id="btn-right-parent">
+        <div id="btn-right-group">
+            <button class="floating_button" id="btn-left2" onclick="prev()" style="margin-right: 40px;">
+                <!-- left arrow -->
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="#212121" d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" />
+                </svg>
+            </button>
+            <button class="floating_button" id="btn-right" onclick="next()">
+                <!-- right arrow -->
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="#212121" d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+<?php include '../footer.html';?>
+<script src="js/imageGallery.js"></script>
+<script src="js/alignGalleryButtons.js"></script>
+<script>
+    setup(["images/img1.jpg", "images/img2.jpg", "images/img3.jpg"]);
+</script>
+</body>
+</html>

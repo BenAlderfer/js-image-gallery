@@ -1,0 +1,328 @@
+.dark-primary-color    { background: #1976D2; }
+.default-primary-color { background: #2196F3; }
+.light-primary-color   { background: #BBDEFB; }
+
+.background-color    { background: #E0E0E0; }
+.card-background-color    { background: #FFFFFF; }
+
+.text-header-color    { color: #FFFFFF; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #757575; }
+
+.accent-color          { background: #FF9800; }
+.divider-color         { border-color: #BDBDBD; }
+
+/* reset margins and padding */
+* {
+    margin:0;
+    padding:0;
+    font-family: Roboto, Arial, sans-serif;
+    color:#212121; /* primary text color */
+}
+
+html {
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100%;
+    width: 100%;
+    max-width: 100%;
+}
+
+body {
+    margin-bottom: 40px;
+    min-height: 100%;
+    width: 100%;
+    max-width: 100%;
+}
+
+header {
+    background: #2196F3; /* default primary color */
+    padding: 5px;
+    box-shadow: 0 2px 3px #888888;
+    height: 180px;
+    width: 100%;
+}
+
+header h1 {
+    margin: 10px 20px 10px 20px;
+    float: left;
+}
+
+header *  {
+    color: #FFFFFF; /* text header color */
+    font-size: 1.5em;
+}
+
+.dropdown-section {
+    float: right;
+	margin-right: 20px;
+}
+
+.dropdown-section * {
+    font-size: 1.3rem;
+}
+
+/* the button */
+.dropbtn {
+    background-color: #2196F3;
+    color: white;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+/* the container  */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* the dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    min-width: 120px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #E0E0E0;
+}
+
+/* dropdown content appears on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* darker button color when dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #1976D2;
+}
+
+.small-arrow {
+    font-size: .6em;
+}
+
+.horizontal-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.vertical-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+/* add spacing to children */
+.horizontal-flex section {
+    padding: 0 10px 0 10px;
+}
+
+a {
+    color: #2196F3; /* default primary color */
+}
+
+a:visited {
+    color: #1976D2; /* dark primary color */
+}
+
+a:active {
+    color: #BBDEFB; /* light primary color */
+}
+
+/* navbar title */
+.nav-title, .nav-title:visited {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+}
+
+.nav-title:hover {
+    text-decoration: underline;
+}
+
+.nav-title:active {
+    color: #FF9800;
+}
+
+/* links inside the dropdown content */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.title-text {
+    color: #2196F3; /* default primary color */
+}
+
+.title-large {
+    font-size: 1.5em;
+}
+
+.title-medium {
+    font-size: 1.2em;
+}
+
+.card {
+    padding: 10px;
+    background: #FFFFFF; /* card background color */
+    box-shadow: 0 2px 3px #888888;
+    border-radius: 3px;
+    z-index: 5;
+}
+
+.indent {
+    margin-left: 5px;
+}
+
+.indent-double {
+    margin-left: 10px;
+}
+
+.gap-below {
+    margin-bottom: 20px;
+}
+
+.card-photo {
+    width: 100%;
+    padding: 10px;
+    z-index: 1;
+}
+
+.photo-left {
+    float: left;
+    padding: 10px;
+    z-index: 1;
+}
+
+.photo-small {
+    width: 200px;
+}
+
+.photo-small-square {
+    width: 200px;
+    height: 200px;
+}
+
+.photo-medium {
+    width: 300px;
+}
+
+.photo-large {
+    width: 400px;
+}
+
+.photo-xlarge {
+    width: 600px;
+}
+
+.photo-xxlarge {
+    width: 750px;
+}
+
+.margin-bottom {
+    margin-bottom: 20px;
+}
+
+.margin-left {
+    margin-left: 20px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.center {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.surround-padding {
+    padding: 10px;
+}
+
+.to-top-box {
+    position: absolute;
+    right: 20px;
+    bottom: 60px;
+    background: #2196F3;
+    padding: 10px;
+    box-shadow: 0 2px 3px #888888;
+}
+
+.to-top-box a {
+    color: white;
+    text-decoration: none;
+}
+
+.gallery_image {
+    width: 100%;
+    margin: auto;
+}
+
+.floating_button {
+    padding: 10px;
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    background: #FFFFFF; /* card background color */
+    box-shadow: 0 2px 3px #888888;
+    z-index: 5;
+    border: none;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.floating_button > * {
+    width: 100%;
+    margin: auto;
+}
+
+.floating_button:active {
+    background: #EEEEEE;
+    box-shadow: 0 1px 2px #888888;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #2196F3; /* default primary color */
+    text-align: center;
+    clear: both;
+}
+
+footer *, footer a:visited {
+    color: white;
+}
+
+/* tablets */
+@media screen and (min-width: 600px) {
+    header {
+        height: 120px;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 768px) {
+    header {
+        height: 70px;
+    }
+}
