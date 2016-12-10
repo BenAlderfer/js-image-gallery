@@ -23,4 +23,6 @@ To get started:
 </script>
 ```
 
+5) If you want physical navigation buttons, create buttons with onclick="prev()" or onclick="next()"
+
 ***** All other include files are just for the demo and are not required
