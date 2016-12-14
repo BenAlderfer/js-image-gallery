@@ -31,6 +31,20 @@ function next() {
     setImage();
 }
 
+//set image to a specific index
+function setToIndex(newIndex) {
+    index = newIndex;
+    setImage();
+}
+
+//set image to a specific image
+function setToImage(path) {
+    //find image index
+    index = images.indexOf(path);
+
+    setImage();
+}
+
 //show image at current index
 function setImage() {
     document.getElementById('image').src = images[index];
