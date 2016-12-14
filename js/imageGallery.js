@@ -32,6 +32,7 @@ function next() {
 }
 
 //set image to a specific index
+//defaults to boundaries if out of bounds
 function setToIndex(newIndex) {
     index = newIndex;
 
