@@ -31,6 +31,35 @@ function next() {
     setImage();
 }
 
+//set image to a specific index
+//defaults to boundaries if out of bounds
+function setToIndex(newIndex) {
+    index = newIndex;
+
+    //index out of bounds, set to boundary
+    if (index < 0) {
+        index = 0;
+    } else if (index >= images.length) {
+        index = images.length - 1;
+    }
+
+    setImage();
+}
+
+//set image to a specific image
+//defaults to 0 if not found
+function setToImage(path) {
+    //find image index
+    index = images.indexOf(path);
+
+    //image not found
+    if (index < 0) {
+        index = 0;
+    }
+
+    setImage();
+}
+
 //show image at current index
 function setImage() {
     document.getElementById('image').src = images[index];
