@@ -15,7 +15,7 @@ To get started:
 <script src="js/imageGallery.js"></script>
 ```
 
-3) Make the &#12296;img&#12297; somewhere and set its id to "image"
+3) Make the &#12296;img&#12297; somewhere and set its id to "image" (or change the id in "document.getElementById('image')" to yours)
 
 4) Create an internal script to feed the array of image locations to imageGallery.js 
 
