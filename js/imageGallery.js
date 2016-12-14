@@ -41,7 +41,6 @@ function setToIndex(newIndex) {
 function setToImage(path) {
     //find image index
     index = images.indexOf(path);
-
     setImage();
 }
 
