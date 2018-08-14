@@ -29,4 +29,4 @@ To get started:
 
 6) If you want to set a specific image, use setToIndex() with the index in the array or setToImage() with the String path to the image.
 
-***** All other include files are just for the demo and are not required
+***** All other included files are just for the demo and are not required
